@@ -1,0 +1,27 @@
+{
+	"geode": "5.7.1",
+	"gd": {
+		"mac": "2.2081"
+	},
+	"id": "nathanlee.gd-ai-2",
+	"name": "GD AI 2 Bridge",
+	"version": "v1.0.0",
+	"developer": "nathanlee",
+	"description": "Turns a level into a lockstep RL environment: the game only advances when the Python agent sends an action.",
+	"settings": {
+		"agent-control": {
+			"type": "bool",
+			"default": true,
+			"name": "Agent control",
+			"description": "When on and the Python trainer is running, the agent drives the game (lockstep). Turn off to play normally."
+		},
+		"steps-per-frame": {
+			"type": "int",
+			"default": 4,
+			"min": 1,
+			"max": 32,
+			"name": "Agent steps per frame",
+			"description": "Maximum agent steps processed per rendered frame. Higher = faster than real time training."
+		}
+	}
+}
